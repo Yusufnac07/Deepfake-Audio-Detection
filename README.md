@@ -81,6 +81,6 @@ Step 4: Testing & Prediction Run the prediction panel to test the model on rando
 
 The model successfully identifies micro-frequency errors and "sharp cut" artifacts typical of AI-generated audio, which are often inaudible to the human ear.
 
-👥 Contributor
+👥 Contributor : 
     Yusuf Can GÖREN
 
