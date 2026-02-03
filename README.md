@@ -27,8 +27,7 @@ Traditional methods analyze raw audio waveforms, which is computationally expens
 * **Classification:** Flatten layer followed by Dense layers with 50% Dropout to prevent overfitting.
 * **Output:** Sigmoid activation for binary classification (Real vs. Fake).
 
-## 📂 Project Structure
-
+📂 Project Structure
 ```bash
 ├── preprocessing/
 │   └── audio_to_spectrogram.py # Converts .wav/.mp3 files to Spectrogram images
@@ -39,6 +38,7 @@ Traditional methods analyze raw audio waveforms, which is computationally expens
 ├── inference/
 │   └── predict_panel.py        # Loads the trained model and predicts on new images
 └── requirements.txt            # Project dependencies
+'''
 
 🚀 Installation & Usage
 1. Prerequisites
