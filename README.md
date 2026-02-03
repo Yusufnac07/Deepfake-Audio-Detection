@@ -75,8 +75,8 @@ Step 4: Testing & Prediction Run the prediction panel to test the model on rando
     python inference/predict_panel.py
 
 📊 Results
-    Training Accuracy: 90.38%
-    Validation Accuracy: 91.67%
+    Training Accuracy: 90.38% -
+    Validation Accuracy: 91.67% -
     Loss: 0.44
 
 The model successfully identifies micro-frequency errors and "sharp cut" artifacts typical of AI-generated audio, which are often inaudible to the human ear.
