@@ -9,6 +9,11 @@ With the rise of Generative AI, "Deepfake" voice cloning has become a major cybe
 
 Traditional methods analyze raw audio waveforms, which is computationally expensive. Our approach converts audio into images (spectrograms) to leverage the pattern recognition power of computer vision.
 
+## 📊 Dataset
+Due to file size limitations, the dataset is not included directly in this repository. 
+* **Source:** [Kaggle - DeepVoice: Deepfake Voice Recognition](https://www.kaggle.com/datasets/birdy654/deep-voice-deepfake-voice-recognition)
+* **Setup:** Download the dataset and place the `REAL` and `FAKE` folders into a directory named `raw_audio_dataset/` in the project root.
+
 ## 🎯 Purpose & Methodology
 * **Visualizing Sound:** Audio files are converted into Mel-Spectrograms to reveal hidden frequency artifacts left by AI generation models.
 * **Deep Learning:** A custom CNN model classifies these spectrogram images as "REAL" or "FAKE".
@@ -17,18 +22,20 @@ Traditional methods analyze raw audio waveforms, which is computationally expens
 ## 🛠️ Tech Stack & Architecture
 
 ### Data Processing Pipeline
-1.  **Sampling:** First 3 seconds of audio are extracted.
-2.  **Transformation:** Converted to Mel-Spectrograms using `Librosa`.
-3.  **Resizing:** Images are resized to 128x128 pixels (RGB).
+1. **Sampling:** First 3 seconds of audio are extracted.
+2. **Transformation:** Converted to Mel-Spectrograms using `Librosa`.
+3. **Resizing:** Images are resized to 128x128 pixels (RGB).
 
 ### CNN Model Architecture
-* **Input Layer:** 128x128x3 Image
+* **Input Layer:** 128x128x3 Image.
 * **Feature Extraction:** 3 Convolutional Blocks (32, 64, 128 filters) with Max Pooling.
 * **Classification:** Flatten layer followed by Dense layers with 50% Dropout to prevent overfitting.
 * **Output:** Sigmoid activation for binary classification (Real vs. Fake).
 
 ## 📂 Project Structure
+
 ```bash
+├── raw_audio_dataset/          # (User created) Place REAL and FAKE folders here
 ├── preprocessing/
 │   └── audio_to_spectrogram.py # Converts .wav/.mp3 files to Spectrogram images
 ├── analysis/
