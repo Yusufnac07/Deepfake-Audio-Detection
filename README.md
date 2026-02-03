@@ -47,7 +47,8 @@ Install the required Python libraries:
 
 2. Workflow
 Step 1: Data Preparation Place your audio files in a dataset folder and run the preprocessing script to generate spectrogram images.
-    python preprocessing/audio_to_spectrogram.py
+
+   python preprocessing/audio_to_spectrogram.py
 
 Step 2: Analysis (Optional) Visualize the visual differences between real and fake audio fingerprints.
     
