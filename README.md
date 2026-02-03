@@ -29,6 +29,7 @@ Traditional methods analyze raw audio waveforms, which is computationally expens
 
 ## 📂 Project Structure
 
+```bash
 ├── preprocessing/
 │   └── audio_to_spectrogram.py # Converts .wav/.mp3 files to Spectrogram images
 ├── analysis/
