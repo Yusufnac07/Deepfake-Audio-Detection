@@ -50,14 +50,17 @@ Step 1: Data Preparation Place your audio files in a dataset folder and run the 
     python preprocessing/audio_to_spectrogram.py
 
 Step 2: Analysis (Optional) Visualize the visual differences between real and fake audio fingerprints.
+    
     python analysis/difference_analysis.py
 
 Step 3: Training the Model Train the CNN model on the generated spectrograms.
+    
     python model/train_cnn_model.py
 
 This will save the trained model as deepfake_ses_modeli.keras.
 
 Step 4: Testing & Prediction Run the prediction panel to test the model on random samples.
+    
     python inference/predict_panel.py
 
 📊 Results
@@ -66,6 +69,7 @@ Step 4: Testing & Prediction Run the prediction panel to test the model on rando
     Loss: 0.44
 
 The model successfully identifies micro-frequency errors and "sharp cut" artifacts typical of AI-generated audio, which are often inaudible to the human ear.
+
 👥 Contributor
 
     Yusuf Can GÖREN
