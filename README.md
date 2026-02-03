@@ -80,6 +80,7 @@ Step 4: Testing & Prediction Run the prediction panel to test the model on rando
     Loss: 0.44
 
 The model successfully identifies micro-frequency errors and "sharp cut" artifacts typical of AI-generated audio, which are often inaudible to the human ear.
+
 👥 Contributor
     Yusuf Can GÖREN
 
