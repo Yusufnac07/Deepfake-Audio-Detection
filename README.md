@@ -28,6 +28,7 @@ Traditional methods analyze raw audio waveforms, which is computationally expens
 * **Output:** Sigmoid activation for binary classification (Real vs. Fake).
 
 ## 📂 Project Structure
+```bash
 ├── preprocessing/
 │   └── audio_to_spectrogram.py # Converts .wav/.mp3 files to Spectrogram images
 ├── analysis/
@@ -37,13 +38,14 @@ Traditional methods analyze raw audio waveforms, which is computationally expens
 ├── inference/
 │   └── predict_panel.py        # Loads the trained model and predicts on new images
 └── requirements.txt            # Project dependencies
+```
 
 🚀 Installation & Usage
 1. Prerequisites
 
 Install the required Python libraries:
-        
-        pip install -r requirements.txt
+    
+    pip install -r requirements.txt
 
 2. Workflow
 
@@ -66,15 +68,11 @@ Step 4: Testing & Prediction Run the prediction panel to test the model on rando
     python inference/predict_panel.py
 
 📊 Results
-
     Training Accuracy: 90.38%
-
     Validation Accuracy: 91.67%
-
     Loss: 0.44
 
 The model successfully identifies micro-frequency errors and "sharp cut" artifacts typical of AI-generated audio, which are often inaudible to the human ear.
 👥 Contributor
-
     Yusuf Can GÖREN
 
